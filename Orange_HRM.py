@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.service import Service
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach",True)
 driver = webdriver.Chrome(options=options)
-# driver.implicitly_wait(40)
+driver.maximize_window()
 
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 # driver.find_element("username").send_keys("Admin")
