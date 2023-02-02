@@ -12,7 +12,7 @@ driver.maximize_window()
 driver.get("https://www.facebook.com/")
 driver.find_element(By.NAME, "email").send_keys("abc@gmail.com")
 driver.find_element(By.NAME, "pass").send_keys("admin123")
-# driver.find_element(By.XPATH, "/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button").click()
+driver.find_element(By.NAME, "login").click()
 
 # actual_key = driver.title
 # expected_key = "OrangeHRM"
